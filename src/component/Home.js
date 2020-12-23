@@ -5,6 +5,8 @@ import {Header} from "./Header"
 import {Footer} from "./Footer"
 import logo from "../assets/img/2021-ushi-title.jpg"
 
+const defaultPath = "/2021_new_year"
+
 const useStyles = makeStyles((theme) => ({
   root: {
         backgroundColor: "#ffffff",
@@ -44,11 +46,11 @@ const Home = () => {
                     <p>
                         新年のご挨拶や就職後の近況報告など書かせていただければと存じます。別に会社でWeb開発をしているわけではないので、サイトの完成度が低いのはご容赦をば。
                     </p>
-                    <b>Next &gt;&gt; <Link to="/greeting" className={classes.linkClass}>新年のご挨拶</Link></b>
+                    <b>Next &gt;&gt; <Link to={defaultPath + "/greeting"} className={classes.linkClass}>新年のご挨拶</Link></b>
                 </div>
             <Footer/>
         </div>
     )
 }
 
-export {Home}
+export {Home, defaultPath}

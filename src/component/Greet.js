@@ -1,6 +1,7 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import { Header } from "./Header"
+import {defaultPath} from "./Home"
 import { makeStyles } from '@material-ui/core/styles';
 import {Footer} from "./Footer"
 
@@ -66,7 +67,7 @@ const Greet = () => {
                             次は仕事について少し書いていこうと思います。教え子が働いている様をしみじみ感じていただければ幸いです。
                         </p>
                     </div>
-                    <b>Next &gt;&gt; <Link to="/work" className={classes.linkClass}>お仕事について</Link></b>
+                    <b>Next &gt;&gt; <Link to={defaultPath + "/work"} className={classes.linkClass}>お仕事について</Link></b>
                 </div>
             </div>
             <Footer/>

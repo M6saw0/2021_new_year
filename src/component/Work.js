@@ -1,6 +1,7 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import {Header} from "./Header"
+import {defaultPath} from "./Home"
 import { Footer } from "./Footer"
 import {singlePageStyles} from "./Greet"
 
@@ -39,7 +40,7 @@ const Work = () => {
                         <br/>
                         <p>お仕事についてはこんな感じです。</p>
                     </div>
-                    <b>Next &gt;&gt; <Link to="/closing" className={classes.linkClass}>最後に</Link></b>
+                    <b>Next &gt;&gt; <Link to={defaultPath + "/closing"} className={classes.linkClass}>最後に</Link></b>
                 </div>
             </div>
             <Footer/>

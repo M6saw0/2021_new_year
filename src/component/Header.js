@@ -13,6 +13,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import {FaHome, FaDoorClosed} from "react-icons/fa"
 import {CgHello} from "react-icons/cg"
 import {MdWork} from "react-icons/md"
+import {defaultPath} from "./Home"
 import logo from "../assets/logo.png"
 
 const useStyles = makeStyles((theme) => ({
@@ -60,7 +61,7 @@ const Header = () => {
             <Toolbar>
               <SimpleMenu className={classes.menuButton}/>
               <Typography variant="h6" className={classes.title}>
-                <Link to="/"><img className={classes.logo} src={logo} alt="Masawo"/></Link>
+                <Link to={defaultPath + "/"}><img className={classes.logo} src={logo} alt="Masawo"/></Link>
               </Typography>
             </Toolbar>
           </AppBar>
@@ -82,22 +83,22 @@ function SimpleMenu(props) {
 
   const linkList = [
     {
-      to: "/",
+      to: defaultPath + "/",
       text: "Home",
       icon: <FaHome/>,
     },
     {
-      to: "/greeting",
+      to: defaultPath + "/greeting",
       text: "Greeting",
       icon: <CgHello/>,
     },
     {
-      to: "/work",
+      to: defaultPath + "/work",
       text: "Work",
       icon: <MdWork/>,
     },
     {
-      to: "/closing",
+      to: defaultPath + "/closing",
       text: "Closing",
       icon: <FaDoorClosed/>,
     },
