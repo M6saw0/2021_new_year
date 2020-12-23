@@ -1,8 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import { makeStyles } from '@material-ui/core/styles';
-import {Header} from "./Header"
-import {Footer} from "./Footer"
 import logo from "../assets/img/2021-ushi-title.jpg"
 
 const defaultPath = "/2021_new_year"
@@ -13,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh",
+        maxHeight: "180vh",
         paddingTop: "0",
   },
   titleImage: {
@@ -23,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "'Sawarabi Mincho', sans-serif",
         fontSize: "4wv",
         flex: 1,
-        minHeight: "100vh"
   },
   linkClass: {
     color: "#555555",
@@ -37,7 +35,6 @@ const Home = () => {
     const classes = useStyles()
     return (
         <div className={classes.root}>
-            <Header/>
                 <img src={logo} className={classes.titleImage} alt="top"/>
                 <div className={classes.content}>
                     <b>
@@ -47,8 +44,8 @@ const Home = () => {
                         新年のご挨拶や就職後の近況報告など書かせていただければと存じます。別に会社でWeb開発をしているわけではないので、サイトの完成度が低いのはご容赦をば。
                     </p>
                     <b>Next &gt;&gt; <Link to={defaultPath + "/greeting"} className={classes.linkClass}>新年のご挨拶</Link></b>
+                    <br/>
                 </div>
-            <Footer/>
         </div>
     )
 }

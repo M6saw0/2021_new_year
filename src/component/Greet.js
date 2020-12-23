@@ -9,6 +9,7 @@ const singlePageStyles = makeStyles((theme) => ({
   root: {
         backgroundColor: "#ffffff",
         minHeight: "100vh",
+        maxHeight: "180vh",
   },
   wrap: {
         margin: "5% 5% 0 5%",
@@ -46,7 +47,7 @@ const Greet = () => {
 
     return (
         <div className={classes.root}>
-            <Header/>
+            {/* <Header/> */}
             <div className={classes.wrap}>
                 <div className={classes.content}>
                     <h1 className={classes.h1}>新年のご挨拶</h1>
@@ -68,9 +69,11 @@ const Greet = () => {
                         </p>
                     </div>
                     <b>Next &gt;&gt; <Link to={defaultPath + "/work"} className={classes.linkClass}>お仕事について</Link></b>
+                    <br/>
+                    <br/>
                 </div>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

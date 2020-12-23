@@ -10,7 +10,7 @@ const Work = () => {
 
     return (
         <div className={classes.root}>
-            <Header/>
+            {/* <Header/> */}
             <div className={classes.wrap}>
                 <div className={classes.content}>
                     <h1 className={classes.h1}>お仕事について</h1>
@@ -37,13 +37,14 @@ const Work = () => {
                         <p>
                             データベース設計は面白いですが、今後はもう少し個人でできるスケールのことをやりたいなぁと考えています。具体的には、強化学習やスクレイピングなどを使用する案件に入りたいなぁと思っています。
                         </p>
-                        <br/>
                         <p>お仕事についてはこんな感じです。</p>
                     </div>
                     <b>Next &gt;&gt; <Link to={defaultPath + "/closing"} className={classes.linkClass}>最後に</Link></b>
+                    <br/>
+                    <br/>
                 </div>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

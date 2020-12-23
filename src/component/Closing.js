@@ -8,7 +8,7 @@ const Closing = () => {
 
     return (
         <div className={classes.root}>
-            <Header/>
+            {/* <Header/> */}
             <div className={classes.wrap}>
                 <div className={classes.content}>
                     <h1 className={classes.h1}>最後に</h1>
@@ -24,7 +24,7 @@ const Closing = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }
