@@ -35,17 +35,18 @@ const Home = () => {
     const classes = useStyles()
     return (
         <div className={classes.root}>
-                <img src={logo} className={classes.titleImage} alt="top"/>
-                <div className={classes.content}>
-                    <b>
-                        新年あけましておめでとうございます。
-                    </b>
-                    <p>
-                        新年のご挨拶や就職後の近況報告など書かせていただければと存じます。別に会社でWeb開発をしているわけではないので、サイトの完成度が低いのはご容赦をば。
-                    </p>
-                    <b>Next &gt;&gt; <Link to={defaultPath + "/greeting"} className={classes.linkClass}>新年のご挨拶</Link></b>
-                    <br/>
-                </div>
+            <img src={logo} className={classes.titleImage} alt="top"/>
+            <div className={classes.content}>
+                <b>
+                    新年あけましておめでとうございます。
+                </b>
+                <p>
+                    新年のご挨拶や就職後の近況報告など書かせていただければと存じます。別に会社でWeb開発をしているわけではないので、サイトの完成度が低いのはご容赦をば。
+                </p>
+                <b>Next &gt;&gt; <Link to={defaultPath + "/greeting"} className={classes.linkClass}>新年のご挨拶</Link></b>
+                <br/>
+            </div>
+            <Footer/>
         </div>
     )
 }

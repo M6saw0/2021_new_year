@@ -18,7 +18,6 @@ function App() {
           <Route path={defaultPath + "/greeting"} component={Greet}/>
           <Route path={defaultPath + "/work"} component={Work}/>
           <Route path={defaultPath + "/closing"} component={Closing}/>
-          <Footer/>
       </BrowserRouter>
     </div>
   );
