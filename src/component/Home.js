@@ -1,6 +1,7 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import { makeStyles } from '@material-ui/core/styles';
+import {Footer} from "./Footer"
 import logo from "../assets/img/2021-ushi-title.jpg"
 
 const defaultPath = "/2021_new_year"
