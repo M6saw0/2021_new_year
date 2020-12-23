@@ -36,7 +36,7 @@ const Home = () => {
     return (
         <div className={classes.root}>
             <Header/>
-                <img src={logo} className={classes.titleImage}/>
+                <img src={logo} className={classes.titleImage} alt="top image"/>
                 <div className={classes.content}>
                     <b>
                         新年あけましておめでとうございます。
